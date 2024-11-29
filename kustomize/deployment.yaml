@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: test
-        image: test
+        image: docker.io/library/hello-world:latest
         imagePullPolicy: IfNotPresent
         env:
         - name: PODINFO_UI_COLOR
