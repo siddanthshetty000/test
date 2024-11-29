@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: podinfo
+  name: test
 spec:
   minReadySeconds: 3
   revisionHistoryLimit: 5
@@ -12,7 +12,7 @@ spec:
     type: RollingUpdate
   selector:
     matchLabels:
-      app: podinfo
+      app: test
   template:
     metadata:
       labels:
